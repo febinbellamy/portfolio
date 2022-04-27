@@ -3,146 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Febin Bellamy Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <title>Febin Bellamy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2a6f88575f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="#"><img src="img/FebinBellamyLogo.png" alt=""/></a>
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+    <section class="hero">
+      <nav>
+        <img
+          class="logo"
+          src="src/images/FB_Logo.png"
+          alt="Febin Bellamy's logo"
+        />
+        <ul id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
-    </header>
-
-    <!-- Intro -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Febin Bellamy</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">A front-end web developer</p>
-      <img src="img/FebinHeadshot.jpg" alt="a picture of Febin Bellamy smiling" class="intro__img"/>
+      <div class="hero-area">
+        <div class="hero-text">
+          <h1>Febin Bellamy</h1>
+          <p>Full Stack Web Developer</p>
+          <div class="button"><a href="#about">About</a></div>
+        </div>
+        <div class="socials">
+          <div>
+            <a
+              class="social"
+              href="https://github.com/febinbellamy"
+              target="_blank"
+            >
+              <svg
+                fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a
+              class="social"
+              href="https://linkedin.com/in/febinbellamy"
+              target="_blank"
+            >
+              <svg
+                fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a
+              class="social"
+              href="mailto:febinbellamy@gmail.com?subject=Hello!"
+              target="_blank"
+            >
+              <svg
+                fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- My services -->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Web Development</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, ipsum corrupti blanditiis enim neque provident ea molestiae, ex corporis excepturi fuga quidem rerum. Veniam atque unde odit quisquam placeat repudiandae?</p>
-        </div>
-        <div class="service">
-          <h3>UI/UX</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, in eos, nobis neque, molestiae magni non tempore ullam dolorem atque et officiis fugit error provident quidem id natus reiciendis unde.</p>
-        </div>
-        <div class="service">
-          <h3>Mobile Applications</h3>
-          <p>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequuntur! Quaerat est enim vel aliquam commodi, provident, minus rem cum assumenda quas expedita ex. Sit dicta deserunt sapiente nisi totam.
+    <section class="sub-section" id="about">
+      <div class="information">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Febin Bellamy. I'm a Full Stack Web Developer based
+          out of New York City.
+        </p>
+      </div>
+      <div class="headshot-container">
+        <img
+          class="headshot"
+          src="src/images/Febin_Headshot.jpg"
+          alt="Febin Bellamy headshot photo"
+        />
+      </div>
+    </section>
+
+    <section class="sub-section-alternative" id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img
+            src="src/images/ChatbotV1.png"
+            alt="Project One Image"
+            class="project-image"
+          />
+          <h3>Community College Chatbot</h3>
+          <p class="subtext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque,
+            id recusandae debitis sunt eius officia hic ratione asperiores
+            voluptatum facilis doloremque suscipit dolorem magni, earum velit
+            consequatur animi autem.
           </p>
+          <hr />
+          <p class="subtext">View here</p>
+        </div>
+        <div class="project-card">
+          <img
+            src="src/images/eCommerceStore.png"
+            alt="Project Two Image"
+            class="project-image"
+          />
+          <h3>E-Commerce Site</h3>
+          <p class="subtext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque,
+            id recusandae debitis sunt eius officia hic ratione asperiores
+            voluptatum facilis doloremque suscipit dolorem magni, earum velit
+            consequatur animi autem.
+          </p>
+          <hr />
+          <p class="subtext">View here</p>
+        </div>
+        <div class="project-card">
+          <img
+            src="src/images/YelpCamp.png"
+            alt="Project Three Image"
+            class="project-image"
+          />
+          <h3>YelpCamp</h3>
+          <p class="subtext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque,
+            id recusandae debitis sunt eius officia hic ratione asperiores
+            voluptatum facilis doloremque suscipit dolorem magni, earum velit
+            consequatur animi autem.
+          </p>
+          <hr />
+          <p class="subtext">View here</p>
         </div>
       </div>
-
-      <a href="#work" class="btn">My Work</a>
     </section>
-
-    <!-- About Me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
-      <div class="about-me__body">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quisquam temporibus ab? Amet exercitationem cupiditate quos ab eos dolore nulla doloribus, vitae suscipit corporis omnis dicta tempora nobis maiores impedit.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quisquam temporibus ab? Amet exercitationem cupiditate quos ab eos dolore nulla doloribus, vitae suscipit corporis omnis dicta tempora nobis maiores impedit.</p>
-      </div>
-
-      <img src="img/FebinFullBody.jpg" alt="A man smiling with his arms folded" class="about-me__img"/>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">Projects</h2>
-      <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-      <div class="portfolio">
-        <!-- Portfolio item 01 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
-        </a>
-        <!-- Portfolio item 02 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
-        </a>
-        <!-- Portfolio item 03 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
-        </a>
-        <!-- Portfolio item 04 -->
-        <a href="#" class="portfolio__item">
-          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
-        </a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <a href="mailto:febinbellamy@gmail.com" class="footer__link"
-        >febinbellamy@gmail.com</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://linkedin.com/in/febinbellamy"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin-in"></i></a
-          >
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://github.com/febinbellamy"
-            target="_blank"
-            ><i class="fa-brands fa-github"></i></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><i class="fa-solid fa-file-pdf"></i></a>
-        </li>
-      </ul>
-
-      <script src="js/index.js"></script>
+    <footer id="contact">
+      <h2>Contact me</h2>
+      <p>febinbellamy@gmail.com</p>
     </footer>
+    <script src="src/app.js"></script>
   </body>
 </html>
