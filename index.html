@@ -19,11 +19,6 @@
   <body>
     <section class="hero">
       <nav>
-        <img
-          class="logo"
-          src="src/images/FB_Logo.png"
-          alt="Febin Bellamy's logo"
-        />
         <ul id="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -37,7 +32,7 @@
         <div class="hero-text">
           <h1>Febin Bellamy</h1>
           <p>Full Stack Web Developer</p>
-          <div class="button"><a href="#projects">Projects</a></div>
+          <a href="#projects"><div class="button">Projects</div></a>
         </div>
         <div class="socials">
           <div>
@@ -49,8 +44,8 @@
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
-                width="70"
-                height="70"
+                width="50"
+                height="50"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -68,8 +63,8 @@
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
-                width="70"
-                height="70"
+                width="50"
+                height="50"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -87,12 +82,12 @@
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
-                width="70"
-                height="70"
+                width="50"
+                height="50"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.701l6.575-7.172zm10.85 0l6.575 7.172v-12.701l-6.575 5.329zm-1.557 1.261l-3.868 3.170-3.868-3.170-8.11 8.848h23.956l-8.11-8.848z"
+                  d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.170-3.868-3.170-8.11 8.848h23.956l-8.11-8.848z"
                 />
               </svg>
             </a>
@@ -106,7 +101,9 @@
         <h2>About Me</h2>
         <p>
           Hello! My name is Febin Bellamy. I'm a Full Stack Web Developer based
-          out of New York City.
+          out of NYC. I pride myself in creating simple, clean web applications
+          that provide a user with a great interface and experience. I can also
+          build mobile applications for iOS and Android with React Native.
         </p>
       </div>
       <div class="headshot-container">
@@ -117,112 +114,113 @@
         />
       </div>
     </section>
-
-
-<section class="skills">
-      <div class="current-stack">
-        <h2 style="text-align: center">Current Stack</h2>
-        <ul class=>
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              height="70"
-              width="70"
-            />
-            <p>HTML</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              height="70"
-              width="70"
-            />
-            <p>CSS</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              height="70"
-              width="70"
-            />
-            <p>JavaScript</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt=""
-              height="70"
-              width="70"
-            />
-            <p>Bootstrap</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt=""
-              height="70"
-              width="70"
-            />
-            <p>React</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-              alt=""
-              height="70"
-              width="70"
-            />
-            <p>Redux</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt=""
-              height="70"
-              width="70"
-            />
-            <p>Node.js</p>
-          </li>
-
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-              alt=""
-              height="70"
-              width="70"
-            />
-            <p>MongoDB</p>
-          </li>
-
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-              alt=""
-              height="70"
-              width="70"
-            />
-            <p>Express</p>
-          </li>
-          <li class="skills">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg"
-              alt=""
-              height="70"
-              width="100"
-            />
-            <p>Adobe XD</p>
-          </li>
-        </ul>
+    <hr />
+    <section class="sub-section-alternative" id="tech-stack">
+      <h2>Skills</h2>
+      <div class="stack-container">
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>HTML</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>CSS</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>JAVASCRIPT</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>BOOTSTRAP</h3>
+        </div>
       </div>
-    </section> 
-
+      <div class="stack-container">
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>REACT</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>REACT NATIVE</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>REDUX</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>NODE.JS</h3>
+        </div>
+      </div>
+      <div class="stack-container">
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>MONGODB</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>EXPRESS</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>FIREBASE</h3>
+        </div>
+        <div class="stack-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg"
+            alt=""
+            class="stack-image"
+          />
+          <h3>ADOBE XD</h3>
+        </div>
+      </div>
+    </section>
+    <hr />
 
     <section class="sub-section-alternative" id="projects">
       <h2>Projects</h2>
@@ -235,30 +233,46 @@
           />
           <h3>Community College Chatbot</h3>
           <p class="subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque,
-            id recusandae debitis sunt eius officia hic ratione asperiores
-            voluptatum facilis doloremque suscipit dolorem magni, earum velit
-            consequatur animi autem.
-          </p>
-          <hr />
-          <p class="subtext">View here</p>
+            A chatbot for community college students seeking to transfer to a 4-year institution. Built using React, Node.js, Express, and Google's DialogFlow API.
+            <br />
+          <a href="" target="_blank"
+            ><button class="project-button" style="margin-right: 25px">
+              Website
+            </button></a
+          >
+          <a
+            href="https://github.com/febinbellamy/chatbot"
+            target="_blank"
+            style="margin-left: 25px"
+            ><button class="project-button">Code</button></a
+          >
         </div>
+
         <div class="project-card">
           <img
             src="src/images/eCommerceStore.png"
             alt="Project Two Image"
             class="project-image"
           />
-          <h3>E-Commerce Site</h3>
+          <h3>E-Commerce App</h3>
           <p class="subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque,
-            id recusandae debitis sunt eius officia hic ratione asperiores
-            voluptatum facilis doloremque suscipit dolorem magni, earum velit
-            consequatur animi autem.
+            A fullstack e-commerce website built using MongoDB, Express, React and Node.js
+            with Stripe Checkout to handle payments.
           </p>
-          <hr />
-          <p class="subtext">View here</p>
+          <br />
+          <a target="_blank"
+            ><button class="project-button" style="margin-right: 25px">
+              Website
+            </button></a
+          >
+          <a
+            href="https://github.com/febinbellamy/e-commerce-app"
+            target="_blank"
+            style="margin-left: 25px"
+            ><button class="project-button">Code</button></a
+          >
         </div>
+
         <div class="project-card">
           <img
             src="src/images/YelpCamp.png"
@@ -267,20 +281,31 @@
           />
           <h3>YelpCamp</h3>
           <p class="subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque,
-            id recusandae debitis sunt eius officia hic ratione asperiores
-            voluptatum facilis doloremque suscipit dolorem magni, earum velit
-            consequatur animi autem.
+            A fullstack website where users can explore, create and review campgrounds. Build using Node.js, Express, HTML, Bootstrap, and EJS.
           </p>
-          <hr />
-          <p class="subtext">View here</p>
+          <br />
+          <a target="_blank"
+            ><button class="project-button" style="margin-right: 25px">
+              Website
+            </button></a
+          >
+          <a
+            href="https://github.com/febinbellamy/Yelp-Camp"
+            target="_blank"
+            style="margin-left: 25px"
+            ><button class="project-button">Code</button></a
+          >
         </div>
       </div>
     </section>
 
     <footer id="contact">
       <h2>Contact</h2>
-      <p><a href="mailto:febinbellamy@gmail.com?subject=Hello!" target="_blank">febinbellamy@gmail.com</a></p>
+      <p>
+        <a href="mailto:febinbellamy@gmail.com?subject=Hello!" target="_blank"
+          >febinbellamy@gmail.com</a
+        >
+      </p>
     </footer>
     <script src="src/app.js"></script>
   </body>
