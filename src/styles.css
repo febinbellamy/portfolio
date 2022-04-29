@@ -42,8 +42,9 @@ li {
   text-decoration: none;
 }
 
+
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   margin: 0px;
 }
 
@@ -51,7 +52,16 @@ h2 {
   font-size: 50px;
 }
 
-p {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.additional-info {
   margin: 0;
   font-size: 30px;
   font-weight: 300;
@@ -77,7 +87,7 @@ p {
 
 .button {
   width: 150px;
-  height: 50px;
+  height: 57px;
   border-radius: 30px;
   border: white solid;
   text-align: center;
@@ -85,11 +95,14 @@ p {
   font-weight: 300;
   padding-top: 5px;
   margin-top: 20px;
+  padding-bottom: 2px;
   transition: 0.1s;
 }
 
 .button:hover {
-  background-color: #ff781f;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
 }
 
 .button:active {
@@ -108,20 +121,20 @@ p {
 .sub-section {
   display: flex;
   justify-content: space-around;
-  padding: 80px;
+  padding: 70px;
 }
 
 .sub-section-alternative {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 80px;
+  padding: 65px;
 }
 
-.headshot {
+.headshot { 
   width: 200px;
   border-radius: 150px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 .headshot-container {
@@ -129,10 +142,20 @@ p {
   align-items: center;
 }
 
+.about-me-text {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#about-id {
+  margin-bottom: 30px;
+}
+
 .stack-card {
   width: 150px;
   height: 200px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .stack-container {
@@ -147,83 +170,26 @@ p {
   }
 
   .stack-card {
-    width: 250px;
-    height: 200px;
+    max-width: 250px;
+    max-height: 200px;
     margin: 10px;
   }
   .stack-image {
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 100px;
   }
 }
 
 .stack-image {
   margin-top: 25px;
+  margin-bottom: 10px;
   width: 100px;
-}
-
-.project-card {
-  width: 450px;
-  height: auto;
-  box-shadow: 5px 5px 20px rgb(197, 195, 195);
-  margin: 10px;
-  padding: 10px;
-  padding-bottom: 20px;
-}
-
-.project-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-@media only screen and (max-width: 1250px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .project-image {
-    margin-top: 25px;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-  }
-}
-
-.project-image {
-  margin-top: 25px;
-  max-width: 100%;
-  height: auto;
-  object-fit: fill;
-}
-
-.project-button {
-  box-sizing: border-box;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: "Poppins", arial;
-  font-weight: 500;
-  color: #f3f4ed;
-  background-color: #1c1d25;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 10px 10px;
-  margin-top: 25px;
-  cursor: pointer;
-  transition: 0.1s;
-}
-
-.project-button:hover {
-  background-color: #ff781f;
 }
 
 hr {
   margin-left: 50px;
   margin-right: 50px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }
 
 .hamburger {

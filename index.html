@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
@@ -31,7 +37,7 @@
       <div class="hero-area">
         <div class="hero-text">
           <h1>Febin Bellamy</h1>
-          <p>Full Stack Web Developer</p>
+          <p class="additional-info">Full Stack Web Developer</p>
           <a href="#projects"><div class="button">Projects</div></a>
         </div>
         <div class="socials">
@@ -44,8 +50,8 @@
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -63,8 +69,8 @@
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -82,8 +88,8 @@
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -97,13 +103,11 @@
     </section>
 
     <section class="sub-section" id="about">
-      <div class="information">
-        <h2>About Me</h2>
-        <p>
+      <div>
+        <h2 id="about-id">About Me</h2>
+        <p class="about-me-text">
           Hello! My name is Febin Bellamy. I'm a Full Stack Web Developer based
-          out of NYC. I pride myself in creating simple, clean web applications
-          that provide a user with a great interface and experience. I can also
-          build mobile applications for iOS and Android with React Native.
+          in NYC.
         </p>
       </div>
       <div class="headshot-container">
@@ -114,9 +118,11 @@
         />
       </div>
     </section>
+
     <hr />
     <section class="sub-section-alternative" id="tech-stack">
-      <h2>Skills</h2>
+      <h2 style="margin-bottom: 60px">Skills</h2>
+
       <div class="stack-container">
         <div class="stack-card">
           <img
@@ -223,90 +229,73 @@
     <hr />
 
     <section class="sub-section-alternative" id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <img
-            src="src/images/ChatbotV1.png"
-            alt="Project One Image"
-            class="project-image"
-          />
-          <h3>Community College Chatbot</h3>
-          <p class="subtext">
-            A chatbot for community college students seeking to transfer to a 4-year institution. Built using React, Node.js, Express, and Google's DialogFlow API.
-            <br />
-          <a href="" target="_blank"
-            ><button class="project-button" style="margin-right: 25px">
-              Website
-            </button></a
-          >
-          <a
-            href="https://github.com/febinbellamy/chatbot"
-            target="_blank"
-            style="margin-left: 25px"
-            ><button class="project-button">Code</button></a
-          >
-        </div>
+      <h2 style="margin-bottom: 70px">Projects</h2>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="src/images/YelpCamp.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">YelpCamp</h5>
+                <p class="card-text">
+                  A fullstack website where users can explore, create and review
+                  campgrounds. Build using Node.js, Express, HTML, Bootstrap,
+                  and EJS.
+                </p>
+                <a href="" class="btn btn-primary">Website</a>
+                <a href="" class="btn btn-primary">Code</a>
+              </div>
+            </div>
+          </div>
 
-        <div class="project-card">
-          <img
-            src="src/images/eCommerceStore.png"
-            alt="Project Two Image"
-            class="project-image"
-          />
-          <h3>E-Commerce App</h3>
-          <p class="subtext">
-            A fullstack e-commerce website built using MongoDB, Express, React and Node.js
-            with Stripe Checkout to handle payments.
-          </p>
-          <br />
-          <a target="_blank"
-            ><button class="project-button" style="margin-right: 25px">
-              Website
-            </button></a
-          >
-          <a
-            href="https://github.com/febinbellamy/e-commerce-app"
-            target="_blank"
-            style="margin-left: 25px"
-            ><button class="project-button">Code</button></a
-          >
-        </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="src/images/eCommerceStore.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">E-commerce Store</h5>
+                <p class="card-text">
+                  A fullstack e-commerce website built using MongoDB, Express,
+                  React and Node.js with Stripe Checkout to handle payments.
+                </p>
+                <a href="" class="btn btn-primary">Website</a>
+                <a href="" class="btn btn-primary">Code</a>
+              </div>
+            </div>
+          </div>
 
-        <div class="project-card">
-          <img
-            src="src/images/YelpCamp.png"
-            alt="Project Three Image"
-            class="project-image"
-          />
-          <h3>YelpCamp</h3>
-          <p class="subtext">
-            A fullstack website where users can explore, create and review campgrounds. Build using Node.js, Express, HTML, Bootstrap, and EJS.
-          </p>
-          <br />
-          <a target="_blank"
-            ><button class="project-button" style="margin-right: 25px">
-              Website
-            </button></a
-          >
-          <a
-            href="https://github.com/febinbellamy/Yelp-Camp"
-            target="_blank"
-            style="margin-left: 25px"
-            ><button class="project-button">Code</button></a
-          >
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="src/images/ChatbotV1.png" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">CC Chatbot</h5>
+                <p class="card-text">
+                  A chatbot for community college students seeking to transfer
+                  to a 4-year institution. Built using React, Node.js, Express,
+                  and Google's DialogFlow API.
+                </p>
+                <a href="" class="btn btn-primary">Website</a>
+                <a href="" class="btn btn-primary">Code</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <footer id="contact">
       <h2>Contact</h2>
-      <p>
+      <p class="additional-info">
         <a href="mailto:febinbellamy@gmail.com?subject=Hello!" target="_blank"
           >febinbellamy@gmail.com</a
         >
       </p>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="src/app.js"></script>
   </body>
 </html>
